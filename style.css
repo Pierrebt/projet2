@@ -16,7 +16,6 @@ body {
 a {
     color: black;
     text-decoration: none;
-
 }
 
 
@@ -73,17 +72,20 @@ menu a:hover .blue-bar {
 .texte1 {
     font-weight: bold;
     font-size: 22px;
+    margin-bottom: -10px;
 }
 
 .texte2 {
     font-weight: normal;
     font-size: 16px;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 5px;
 }
 
 /* ===== Formulaire de recherche ===== */
+
+
 
 form {
     display: flex;
@@ -104,7 +106,7 @@ form {
 }
 
 .form-section input {
-    width: 90%;
+    width: 89%;
     padding: 0.8rem 1rem;
     text-align: left;
     font-size: 1.2rem;
@@ -149,6 +151,7 @@ form {
     font-weight: bold;
     font-size: 18px;
     margin-top: -23px;
+    padding-top: 34px;
 }
 
 .icon {
@@ -156,13 +159,13 @@ form {
     font-size: 18px;
 }
 
-#filtres form {
+#filtres div.row {
     display: flex;
     justify-content: space-around;
-    width: 67%;
+    width: 66%;
 }
 
-#filtres button {
+#filtres a {
     padding: 12px 15px 12px 15px;
     border-radius: 60px;
     border-width: 2px;
@@ -176,11 +179,11 @@ form {
     /* margin-left: 50px; */
 }
 
-#filtres button i {
+#filtres a i {
     margin-right: 0.3em;
 }
 
-#filtres button:hover {
+#filtres a:hover {
     background: #DEEBFF;
 }
 
@@ -189,8 +192,9 @@ form {
     display: flex;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding-top: 0px;;
+    margin-top: 25px;
 }
 
 .info-icon {
@@ -258,6 +262,7 @@ form {
 	border-radius: 20px;
 	border: 4px solid white;
     margin-left: 30px;
+    height: 199px;
 }
 
 .titrehebergement {
@@ -265,7 +270,7 @@ form {
 	font-weight: bold;
 	margin-left: 12px;
 	margin-top: 7px;
-    margin-bottom: -7px;
+    margin-bottom: -9px;
 	line-height: 1em;
     min-height: 32px;
 }
@@ -274,9 +279,10 @@ form {
 	font-size: 14px;
 	font-weight: normal;
 	margin-left: 12px;
-	margin-bottom: 12px;
-	line-height: 0.5em;
-    margin-top: 12px;
+	margin-bottom: 0px;
+	line-height: 0.9em;
+    margin-top: 5px;
+    max-height: 14px;
 }
 
 .stars {
@@ -284,7 +290,7 @@ form {
     justify-content: flex-start;
     align-items: flex-end;
     width: 0px;
-    margin-left: 13px;
+    margin-left: 12px;
     font-size: 11px;
 }
 
@@ -326,7 +332,7 @@ form {
     border-radius: 20px;
     height: 626px;
     width: 34%;
-    margin: 30px 8px 50px 8px;
+    margin: 30px 0px 50px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +342,7 @@ form {
 .titreboxmostpopular {
     font-size: 22px;
     font-weight: bold;
-    margin: 15px 25px 0px 10px;
+    margin: 15px 0px 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -379,12 +385,12 @@ form {
 .textepopular p {
     font-size: 13px;
     font-weight: 400;
-    margin: 2px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
 }
 
 .textepopular .stars {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     font-size: 11px;
     word-spacing: -3px;
     margin-top: 10px;
@@ -435,6 +441,16 @@ form {
     margin-right: 40px;
 }
 
+.boxactivitees {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 444.51px;
+    border-radius: 20px;
+    box-shadow: #D9D9D9 0px 3px 10px;
+    overflow: hidden;
+}
+
 #titreboxactivites {
     font-size: 22px;
     font-weight: bold;
@@ -468,11 +484,11 @@ a {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #filtres form {
+    #filtres div.row {
         width: 100%;
     }
     
-    #filtres button {
+    #filtres a {
         margin-left: 10px;
         font-size: 0.8em;
         padding: 8px 12px 8px 12px;
@@ -492,7 +508,7 @@ a {
     .titreactivites {
         font-size: 16px;
         font-weight: bold;
-        margin-left: 19px;
+        margin-left: 12px;
         margin-top: 20px;
     }
     
@@ -504,6 +520,17 @@ a {
     }
     
     .boxactivites {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 267px;
+        border-radius: 20px;
+        box-shadow: #D9D9D9 0px 3px 10px;
+        overflow: hidden;
+        margin-right: 40px;
+    }
+
+    .boxactivitees {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -570,7 +597,7 @@ a {
         font-size: 16px;
         font-weight: bold;
         margin-left: 12px;
-        margin-top: 12px;
+        margin-top: 3px;
         line-height: 1em;
     }
     
@@ -578,8 +605,9 @@ a {
         font-size: 14px;
         font-weight: normal;
         margin-left: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         line-height: 0.5em;
+        margin-top: 10px;
     }
     
     
@@ -630,7 +658,7 @@ a {
         color: #0065FC;
         font-size: 18px;
        justify-content: flex-end;
-       padding-left: 350px;
+       padding-left: 330px;
     }
     
     .imagemostpopular {
@@ -736,7 +764,6 @@ a {
         font-size: 22px;
         display: flex;
         padding-top: 50px;
-        margin-right: 10px;
         margin-left: 10px;
     }
     
@@ -747,7 +774,6 @@ a {
         padding-bottom: 20px;
         padding-top: 5px;
         margin-left: 10px;
-        margin-right: 10px;
     }
 
     form {
@@ -765,6 +791,10 @@ a {
         border-bottom-left-radius: 1rem;
         margin-left: 10px;
     }
+
+    div.form-section.form-section-center {
+        width: 80%
+    }
     
     .form-section input {
         width: 100%;
@@ -772,7 +802,6 @@ a {
         text-align: left;
         font-size: 1.2rem;
         border: 2px solid #F2F2F2;   
-        margin-right: 150px;
     }
     
     .form-section-right button {
@@ -789,7 +818,7 @@ a {
 
     .rechercher { 
         display: none;
-}
+    }
 
     
     .form-section-right button .fa-magnifying-glass {
@@ -798,22 +827,27 @@ a {
 
     #filtres {
         display: block;
+        padding-bottom: 5px;
+        width: 100%;
     }
 
-    #filtres form {
+    #filtres div.row {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 96%;
-        padding: 10px;
+        padding: 10px 0px 10px 10px;
+        align-items: flex-start;
+        display: flex;
     }
 
     #filtres h3 {
         display: block;
-        margin-top: 20px;
+        margin-top: 5px;
         margin-left: 10px;
+        margin-bottom: -6px;
     }
     
-    #filtres button {
+    #filtres a {
         display: flex;
         /* font-size: 11px; */
         font-size: 0.8em;
@@ -821,11 +855,13 @@ a {
         padding: 10px 0px 10px 10px;
         align-items: center;
         margin: 10px 0px 10px 0px;
+        box-sizing: border-box;
     }
 
     .infos {
         padding-top: 0px;
         margin-left: 10px;
+        margin-top: -5px;
     }
  
     .card {
@@ -844,8 +880,12 @@ a {
     }
 
     .titreboxmostpopular {
-        margin-right: 70px;
-        margin-left: -20px;
+        margin-right: -8px;
+        margin-left: -2px;
+    }
+
+    .boxmostpopular {
+        width: 96%
     }
     
 
@@ -858,13 +898,15 @@ a {
         padding: 0px;
         display: flex;
         flex-direction: column;
+        margin: 0px 0px 0px 0px;
     }
 
     .titrecard {
-        width: 100%;
+        width: 90%;
         font-size: 22px;
         font-weight: bold;
-        margin: 0px 0px 0px 22px;
+        margin: 0px 0px 0px 0px;
+        padding-left: 22px;
     }
     
     .appartement {
@@ -872,7 +914,7 @@ a {
         border-radius: 0;
         background: white;
         margin: 0;
-        padding: 20px;
+        padding: 20px 0px 20px 15px;
         display: flex;
         flex-direction: column;
     }
@@ -908,6 +950,13 @@ a {
         margin-top: 5px;
     }
     
+    .prixhebergement {
+        margin-top: 0px;
+    }
+
+    .stars {
+        margin-top: 15px;
+    }
 
     .imageactivite {
         display: flex;
@@ -916,7 +965,6 @@ a {
         width: 100%;
         height: 444.51px;
         object-fit: cover;
-        object-position: 0px -15px;
     }
     
     .titreactivites {
@@ -947,6 +995,14 @@ a {
         width: 100%;
         height: 190px;
         margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .boxactivitees {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 20px;
+        margin-right: 0px;
     }
 
     footer {
