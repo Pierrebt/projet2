@@ -482,7 +482,7 @@ a {
 
 /* ======= Version Tablette ======= */
 
-@media (max-width: 991px)  {
+@media (mind-width: 768px) and (max-width: 991px) {
 
     #filtres div.row {
         width: 100%;
