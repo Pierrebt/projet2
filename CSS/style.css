@@ -376,7 +376,7 @@ form {
     background: white;
 }
 
-.textepopular h6 {
+.textepopular h4 {
     font-size: 16px;
     font-weight: bold;
     margin: 5px 0px 0px 0px;
@@ -482,7 +482,7 @@ a {
 
 /* ======= Version Tablette ======= */
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     #filtres div.row {
         width: 100%;
