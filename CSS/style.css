@@ -371,7 +371,7 @@ form {
 .textepopular {
     position: relative;
     width: 169px; 
-    height: auto;
+    height: auto; 
     padding: 0px 5px 0px 10px;
     background: white;
 }
